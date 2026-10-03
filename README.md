@@ -6,9 +6,9 @@ This project corresponds to **Variant 1 — Mapping the Complexity Landscape** f
 
 ## Objective
 
-The goal is to compare theoretical Big-O complexity with real execution-time measurements using synthetic datasets of increasing size.
+The ultimate goal of this variant is to thoroughly compare theoretical Big-O complexity with real execution-time measurements whilst using a couple of synthetic datasets caracterised by their increasing size.
 
-Three different complexity classes are studied:
+The three different complexity classes that are studied are the following:
 
 | Algorithm | Expected Complexity | Normalization |
 |---|---|---|
@@ -48,3 +48,28 @@ Run it:
 ```bash
 java Variant1Benchmark
 ```
+The program prints the measured execution time and normalized value for each input size.
+
+Example output structure:
+
+```text
+Binary Search - Expected O(log n)
+
+           n     Time/search (ns)            T/log2(n)
+       1,000                  ...                  ...
+      10,000                  ...                  ...
+     100,000                  ...                  ...
+```
+
+The exact execution times can vary depending on the computer, JVM and system load. The important result is the growth trend as `n` increases.
+
+## Report
+
+The accompanying report contains the experimental results, plots, normalized measurements and a comparison between the empirical behaviour and the theoretical Big-O complexity of each algorithm.
+
+## Author
+
+**Paula Hernández Varela**  
+Data Science and Engineering  
+Universidad de Las Palmas de Gran Canaria  
+Academic Year 2026–2027
